@@ -41,19 +41,33 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-const navItems = document.querySelectorAll('a');
-navItems[0].textContent = "Services"
-navItems[1].textContent = "Product"
-navItems[2].textContent = "Vision"
-navItems[3].textContent = "Features"
-navItems[4].textContent = "About"
-navItems[5].textContent = "Contact"
+const navLinks = document.querySelectorAll('a');
+navLinks[0].textContent = "Services"
+navLinks[1].textContent = "Product"
+navLinks[2].textContent = "Vision"
+navLinks[3].textContent = "Features"
+navLinks[4].textContent = "About"
+navLinks[5].textContent = "Contact"
+navLinks.forEach((element) => {
+  element.style.color = 'green'
+})
+
+const nav = document.querySelector('nav')
+const newFrontNavLink = document.createElement('a');
+newFrontNavLink.textContent = 'Home';
+const newEndNavLink = document.createElement('a')
+newEndNavLink.textContent = 'FeedBack'
+nav.prepend(newFrontNavLink);
+nav.appendChild(newEndNavLink)
+newFrontNavLink.style.color = 'green'
+newEndNavLink.style.color = 'green'
 
 const codeLogo = document.querySelector("#cta-img");
 codeLogo.src = 'img/header-img.png'
 
 const ctaHeader = document.querySelector('h1');
 ctaHeader.textContent = "DOM Is Awesome"
+
 
 const ctaButton = document.querySelector('button');
 ctaButton.textContent = 'Get Started';
@@ -65,6 +79,7 @@ contentHeader[2].textContent = 'Services'
 contentHeader[3].textContent = 'Product'
 contentHeader[4].textContent = 'Vision'
 contentHeader[5].textContent = 'Contact'
+
 
 const contentInfo = document.querySelectorAll('p');
 contentInfo[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
