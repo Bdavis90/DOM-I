@@ -37,7 +37,7 @@ const siteContent = {
   },
 };
 
-lineBreak = document.createElement('br')
+// lineBreak = document.createElement('br')
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
@@ -53,6 +53,8 @@ navLinks[5].textContent = "Contact"
 navLinks.forEach((element) => {
   element.style.color = 'green'
 })
+
+
 
 
 const nav = document.querySelector('nav')
@@ -75,8 +77,12 @@ codeLogo.src = 'img/header-img.png'
 
 
 const ctaHeader = document.querySelector('h1');
-ctaHeader.textContent = "DOM Is Awesome"
-
+ctaHeader.textContent = "DOM Is awesome";
+// const br = document.createElement('br')
+// const firstSpan = document.createElement('span')
+// firstSpan.textContent = 'is'
+// ctaHeader.appendChild(firstSpan)
+// firstSpan.prepend(br)
 
 
 const ctaButton = document.querySelector('button');
@@ -89,9 +95,6 @@ contentHeader[2].textContent = 'Services'
 contentHeader[3].textContent = 'Product'
 contentHeader[4].textContent = 'Vision'
 contentHeader[5].textContent = 'Contact'
-
-
-
 
 const contentInfo = document.querySelectorAll('p');
 contentInfo[0].textContent = 'Features content elementum magna eros, linebreakac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
